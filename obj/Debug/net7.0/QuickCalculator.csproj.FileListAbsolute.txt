@@ -1,0 +1,14 @@
+D:\Projetos\C#\QuickCalculator\bin\Debug\net7.0\QuickCalculator.exe
+D:\Projetos\C#\QuickCalculator\bin\Debug\net7.0\QuickCalculator.deps.json
+D:\Projetos\C#\QuickCalculator\bin\Debug\net7.0\QuickCalculator.runtimeconfig.json
+D:\Projetos\C#\QuickCalculator\bin\Debug\net7.0\QuickCalculator.dll
+D:\Projetos\C#\QuickCalculator\bin\Debug\net7.0\QuickCalculator.pdb
+D:\Projetos\C#\QuickCalculator\obj\Debug\net7.0\QuickCalculator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\C#\QuickCalculator\obj\Debug\net7.0\QuickCalculator.AssemblyInfoInputs.cache
+D:\Projetos\C#\QuickCalculator\obj\Debug\net7.0\QuickCalculator.AssemblyInfo.cs
+D:\Projetos\C#\QuickCalculator\obj\Debug\net7.0\QuickCalculator.csproj.CoreCompileInputs.cache
+D:\Projetos\C#\QuickCalculator\obj\Debug\net7.0\QuickCalculator.dll
+D:\Projetos\C#\QuickCalculator\obj\Debug\net7.0\refint\QuickCalculator.dll
+D:\Projetos\C#\QuickCalculator\obj\Debug\net7.0\QuickCalculator.pdb
+D:\Projetos\C#\QuickCalculator\obj\Debug\net7.0\QuickCalculator.genruntimeconfig.cache
+D:\Projetos\C#\QuickCalculator\obj\Debug\net7.0\ref\QuickCalculator.dll

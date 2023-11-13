@@ -12,19 +12,29 @@ namespace QuickCalculator{
         public void setHistory(String resut){
 
             history.Add(resut);
+            SaveHistory();
 
         }
 
-        public List<String> getHistory(){
-           
+        public List<string> getHistory()
+        {
         string caminhoArquivo = ".\\cache\\resultHistory.json";
 
-       
-        string json = File.ReadAllText(caminhoArquivo);
+        try
+            {
+                string json = File.ReadAllText(caminhoArquivo);
 
-        List<string> listaDeStrings = JsonSerializer.Deserialize<List<string>>(json);
+                List<string> listaDeStrings = JsonSerializer.Deserialize<List<string>>(json);
 
-        return listaDeStrings;
+                return listaDeStrings;
+            }
+        catch(Exception)
+            {
+                string json = JsonSerializer.Serialize(new List<string>());
+                File.WriteAllText(".\\cache\\resultHistory.json", json);
+                return null;
+                
+            }
         }
 
         public void SaveHistory(){
@@ -34,9 +44,13 @@ namespace QuickCalculator{
 
         }
 
-        internal static void setHistory()
-        {
-            throw new NotImplementedException();
+        
+        public void outHistory(){
+          
+            foreach(string value in getHistory()){
+
+                new Message(value).Return();
+            }
         }
     }
 }

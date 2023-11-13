@@ -10,13 +10,8 @@ namespace QuickCalculator.MainMenu{
             
             
             Console.Clear();
-            var resutHistory = new ResultsHistory().getHistory();
-            Console.WriteLine(resutHistory);
-             foreach (string elemento in resutHistory){
-                                                            
-                 new Message(elemento).Return();
-                            }
-
+            
+            new ResultsHistory().outHistory();
             Console.ForegroundColor = ConsoleColor.Green;
             Console.BackgroundColor = ConsoleColor.Black;
             Console.WriteLine("╔══════════════════════════════════════╗");
@@ -38,7 +33,6 @@ namespace QuickCalculator.MainMenu{
             {   
             
                 new Message("Saindo da calculadora. Até logo!").Error();
-                new ResultsHistory().SaveHistory();
                 break;
             }
 

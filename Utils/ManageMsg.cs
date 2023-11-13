@@ -18,11 +18,9 @@ public struct Message{
     }
 
     public void Return(){
-        Console.Clear();
         Console.ForegroundColor = ConsoleColor.Yellow;
-        var resutFormat = $"::::::: {_message} :::::::";
-        Console.WriteLine(resutFormat);
-        new ResultsHistory().setHistory(resutFormat);
+        
+        Console.WriteLine(_message);
         Console.ResetColor();
 
     }

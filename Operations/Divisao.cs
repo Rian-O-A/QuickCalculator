@@ -10,6 +10,7 @@ namespace QuickCalculator.Operations{
 
             float resultado = valueUser.VALUE01 / valueUser.VALUE02;
             Console.WriteLine($"{valueUser.VALUE01} / {valueUser.VALUE02} = {resultado}");
+            new ResultsHistory().setHistory($":::::::: {valueUser.VALUE01} / {valueUser.VALUE02} = {resultado} ::::::::");
         }
     }
 }

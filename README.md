@@ -45,7 +45,6 @@ Faça um fork do repositório.
     ```bash
     git push origin sua-feature
 
-Abra um Pull Request no repositório original.
 5. **Atualize o Repositório Local:**Antes de começar a trabalhar, certifique-se de ter a versão mais recente do projeto. Execute:
 
     ```bash

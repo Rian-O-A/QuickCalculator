@@ -9,8 +9,7 @@ namespace QuickCalculator.MainMenu{
         {
             
             
-            Console.Clear();
-            
+            new ScreenConsole().Clean();
             new ResultsHistory().outHistory();
             Console.ForegroundColor = ConsoleColor.Green;
             Console.BackgroundColor = ConsoleColor.Black;
@@ -21,7 +20,8 @@ namespace QuickCalculator.MainMenu{
             Console.WriteLine("║ 2 - Subtração                        ║");
             Console.WriteLine("║ 3 - Multiplicação                    ║");
             Console.WriteLine("║ 4 - Divisão                          ║");
-            Console.WriteLine("║ 5 - Sair                             ║");
+            Console.WriteLine("║ 5 - Limpar Historico                 ║");
+            Console.WriteLine("║ 6 - Sair                             ║");
             Console.WriteLine("╚══════════════════════════════════════╝");
             
 
@@ -29,7 +29,7 @@ namespace QuickCalculator.MainMenu{
 
             string escolha = Console.ReadLine();
 
-            if (escolha == "5")
+            if (escolha == "6")
             {   
             
                 new Message("Saindo da calculadora. Até logo!").Error();
@@ -50,6 +50,9 @@ namespace QuickCalculator.MainMenu{
                     break;
                 case "4":
                     new Divisao();
+                    break;
+                case "5":
+                    new ResultsHistory().cleanCache();
                     break;
 
                  default:

@@ -8,7 +8,7 @@ namespace QuickCalculator{
 
     struct ResultsHistory{
         
-        private static List<String> history = new List<string>();
+        private static List<String> history = JsonSerializer.Deserialize<List<string>>(File.ReadAllText(".\\cache\\resultHistory.json"));
         public void setHistory(String resut){
 
             history.Add(resut);
@@ -51,6 +51,10 @@ namespace QuickCalculator{
 
                 new Message(value).Return();
             }
+        }
+
+        public void cleanCache(){
+            File.WriteAllText(".\\cache\\resultHistory.json", JsonSerializer.Serialize(new List<string>()));
         }
     }
 }

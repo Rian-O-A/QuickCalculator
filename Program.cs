@@ -1,5 +1,4 @@
-﻿using System;
-using QuickCalculator.MainMenu;
+﻿using QuickCalculator.MainMenu;
 
 namespace QuickCalculator
 {
@@ -15,4 +14,4 @@ namespace QuickCalculator
     }
 
 }
-// See https://aka.ms/new-console-template for more information
+

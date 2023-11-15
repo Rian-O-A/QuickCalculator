@@ -1,6 +1,6 @@
 
 namespace QuickCalculator{
-    struct ScreenColor{
+    public struct ScreenConsole{
 
         public void Green(){
             Console.ForegroundColor = ConsoleColor.Green;
@@ -11,12 +11,16 @@ namespace QuickCalculator{
             Console.ForegroundColor = ConsoleColor.Yellow;
         }
 
+
+        public void Red(){
+            Console.ForegroundColor = ConsoleColor.Red;
+        }
         public void ResetColor(){
             Console.ResetColor();
         }
 
-        public void Red(){
-            Console.ForegroundColor = ConsoleColor.Red;
+        public void Clean(){
+            Console.Clear();
         }
     }
 

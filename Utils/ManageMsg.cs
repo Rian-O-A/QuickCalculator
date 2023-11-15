@@ -11,17 +11,17 @@ public struct Message{
 
     public void Error(){
 
-            new ScreenColor().Red();
+            new ScreenConsole().Red();
             Console.WriteLine(_message);
-            new ScreenColor().ResetColor();
+            new ScreenConsole().ResetColor();
 
     }
 
     public void Return(){
 
-        new ScreenColor().Yellow();
+        new ScreenConsole().Yellow();
         Console.WriteLine(_message);
-        new ScreenColor().ResetColor();
+        new ScreenConsole().ResetColor();
 
     }
 

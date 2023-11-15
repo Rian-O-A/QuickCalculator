@@ -11,17 +11,16 @@ namespace QuickCalculator.Utils{
             Console.Clear();
             Console.Write("Value 01: ");
             
-            Console.ResetColor();
+            new ScreenColor().ResetColor();
             float v1 = float.Parse(Console.ReadLine());
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.BackgroundColor = ConsoleColor.Black;
+            new ScreenColor().Green();
             Console.Write("Value 02: ");
             
-            Console.ResetColor();
+            new ScreenColor().ResetColor();
             float v2 = float.Parse(Console.ReadLine());
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.BackgroundColor = ConsoleColor.Black;
+            new ScreenColor().Green();
             return (v1, v2);
+            
         }
     }
 }

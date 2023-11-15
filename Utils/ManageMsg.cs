@@ -11,17 +11,17 @@ public struct Message{
 
     public void Error(){
 
-            Console.ForegroundColor = ConsoleColor.Red;
+            new ScreenColor().Red();
             Console.WriteLine(_message);
-            Console.ResetColor();
+            new ScreenColor().ResetColor();
 
     }
 
     public void Return(){
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        
+
+        new ScreenColor().Yellow();
         Console.WriteLine(_message);
-        Console.ResetColor();
+        new ScreenColor().ResetColor();
 
     }
 

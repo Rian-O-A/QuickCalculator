@@ -5,10 +5,7 @@ namespace QuickCalculator.MainMenu{
 
 
         public void  Init() {
-            while (true)
-        {
-            
-            
+
             new ScreenConsole().Clean();
             new ResultsHistory().outHistory();
             Console.ForegroundColor = ConsoleColor.Green;
@@ -29,13 +26,6 @@ namespace QuickCalculator.MainMenu{
 
             string escolha = Console.ReadLine();
 
-            if (escolha == "6")
-            {   
-            
-                new Message("Saindo da calculadora. Até logo!").Error();
-                break;
-            }
-
             switch (escolha){
 
                 case "1":
@@ -53,15 +43,21 @@ namespace QuickCalculator.MainMenu{
                     break;
                 case "5":
                     new ResultsHistory().cleanCache();
+                    Init();
+                    break;
+
+                case "6":
+                    new Message("Saindo da calculadora. Até logo!").Error();
+                    Environment.Exit(0);
                     break;
 
                  default:
                     new Message("Opção inválida. Por favor, escolha uma opção válida.").Error();
                     Console.ReadKey();
-                    continue;
+                    Init();
+                    break;
             }
 
         }
     }
     }
-}

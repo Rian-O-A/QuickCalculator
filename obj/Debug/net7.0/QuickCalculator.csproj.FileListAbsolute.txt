@@ -12,3 +12,4 @@ D:\Projetos\C#\QuickCalculator\obj\Debug\net7.0\refint\QuickCalculator.dll
 D:\Projetos\C#\QuickCalculator\obj\Debug\net7.0\QuickCalculator.pdb
 D:\Projetos\C#\QuickCalculator\obj\Debug\net7.0\QuickCalculator.genruntimeconfig.cache
 D:\Projetos\C#\QuickCalculator\obj\Debug\net7.0\ref\QuickCalculator.dll
+D:\Projetos\C#\QuickCalculator\obj\Debug\net7.0\QuickCalculator.sourcelink.json
